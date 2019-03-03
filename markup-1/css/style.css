@@ -1,0 +1,652 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gentium Book Basic";
+  src: url(../fonts/Gentium-Basic/GenBkBasR.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato.regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../fonts/Yeseva One.ttf");
+  font-style: normal;
+}
+
+* {
+  margin: 0 auto;
+}
+
+html {
+  height: 100%
+}
+
+body {
+  font-size: 0;
+  width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 320px - 159px);
+}
+
+.headerWrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 159px;
+  min-width: 1600px;
+  position: relative;
+  z-index: 3;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  user-select: none;
+}
+
+footer {
+  background: #191919;
+  margin: 0 auto;
+  height: 320px;
+  width: 1600px;
+  position: relative;
+}
+
+h1 {
+  font-family: Yeseva One, serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 90px;
+  color: #f5f3f2;
+  word-spacing: 4px;
+  height: 234px;
+  overflow: hidden;
+  line-height: 122px;
+}
+
+h2 {
+  font-family: "Yeseva One";
+  font-size: 36px;
+  color: #cc9900;
+  padding-bottom: 13px;
+}
+
+nav {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 760px;
+  max-height: 159px;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0 auto;
+  padding-left: 0;
+  height: 73px;
+}
+
+nav ul li {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 45px 21px;
+  letter-spacing: 0.02rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  font-family: "Gentium Book Basic", serif;
+}
+
+nav ul li:active, li:hover {
+  border-top: 3px solid white;
+}
+
+.current-link {
+  border-top: 3px solid white;
+}
+
+.logo {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 550px;
+}
+
+.logo-img {
+  position: relative;
+  left: 182px;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.social-links {
+  display: inline-block;
+  filter: grayscale(0%);
+}
+
+.social-links img {
+  height: 22px;
+  padding: 0 10px;
+}
+
+.social-links a:hover {
+  filter: grayscale(100%);
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.promo-separator {
+  margin: 27px 0 44px 0;
+}
+
+.promo {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  height: 750px;
+  width: 1600px;
+  overflow: hidden;
+}
+
+.promoImg {
+  overflow: hidden;
+  max-height: 750px;
+  width: 1600px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.promoLogo {
+  position: relative;
+  top: 56px;
+  left: 0px;
+  width: 1000px;
+  letter-spacing: -0.6px;
+  z-index: 2;
+}
+
+.promo-button {
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: -10px 15px;
+  border: 1px solid;
+  width: 230px;
+  height: 57px;
+  text-decoration: none;
+}
+
+.promo-button:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: black;
+}
+
+.promo-button:nth-child(3) {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: white;
+}
+
+.promo-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+.from-the-chef {
+  background: url("../img/backgroundPattern1.png") repeat;
+  width: inherit;
+  height: 710px;
+  margin-top: -159px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.chef-wrapper {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  padding-top: 62px;
+  padding-left: 80px;
+}
+
+.figcaption-dish {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 432px;
+  height: inherit;
+  top: -84px;
+  left: -35px;
+  position: relative;
+}
+
+.figcaption-dish span {
+  padding-left: 76px;
+}
+
+.figcaption-dish h2 {
+  padding-bottom: 16px;
+  font-weight: 100;
+}
+
+.figcaption-dish p {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #4c4c4c;
+  padding-top: 28px;
+  padding-bottom: 51px;
+  line-height: 24px;
+}
+
+.from-the-chef-dish {
+  display: inline-block;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin: -1px 0 0 -5px;
+}
+
+.ingredients {
+  height: 760px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ingredients-wrapper {
+  position: absolute;
+  left: 51%;
+  width: 570px;
+  height: 557px;
+  background: rgba(0, 0, 0, 0.43);
+  text-align: center;
+  overflow: hidden;
+  line-height: 24px;
+  top: 100px;
+}
+
+.ingredients-separator {
+  margin: 12px 0;
+}
+
+.ingredients-background {
+  width: 1600px;
+}
+
+.ingredients-background img {
+  margin: 3px 0 0 1px;
+}
+
+.ingredients-wrapper article {
+  display: inline-block;
+  box-sizing: border-box;
+  z-index: 2;
+  padding: 80px 70px 75px;
+}
+
+.ingredients-wrapper h2 {
+  color: #f5f3f2;
+  font-weight: 100;
+  padding-top: 6px;
+}
+
+.ingredients-wrapper p {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #fff;
+}
+
+.ingredients-icon div {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  margin: -8px 15px 0 15px;
+}
+
+img {
+  margin: -5px 0 0 -5px;
+}
+
+.reviews {
+  height: 755px;
+  width: inherit;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.reviews-wrapper {
+  position: absolute;
+  width: 770px;
+  height: 557px;
+  background: url("../img/backgroundGuestReview.png");
+  overflow: hidden;
+  top: 100px;
+  left: 416px;
+}
+
+.reviews-wrapper article {
+  text-align: center;
+  padding-top: 77px;
+}
+
+.reviews-wrapper p {
+  font-family: "Gentium Book Basic";
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  line-height: 45px;
+  padding: 21px 70px;
+  letter-spacing: 1.15px;
+}
+
+.reviews-wrapper p+p {
+  font-family: "Lato";
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.reviews div:first-child {
+  margin-top: -265px;
+}
+
+.decorate-quote {
+  position: absolute;
+  left: 35px;
+  top: 174px;
+}
+
+.reviews h2 {
+  font-size: 33px;
+  color: #fff;
+  letter-spacing: 2px;
+  word-spacing: -2px;
+  padding-bottom: 20px;
+}
+
+.menu-dishes {
+  background: url("../img/backgroundPattern2.png") repeat;
+  width: inherit;
+  height: 994px;
+  overflow: hidden;
+}
+
+.menu-dishes article {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 454px;
+  max-height: 880px;
+  overflow: hidden;
+  line-height: 28.4px;
+  margin: 43px 73px 0 73px;
+}
+
+.menu-wrapper {
+  max-width: 1200px;
+  max-height: 900px;
+  overflow: hidden;
+  padding-top: 65px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.menu-head {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.menu-head h2 {
+  font-weight: 100;
+  padding-bottom: 24px;
+}
+
+.special-menu::before {
+  display: block;
+  box-sizing: border-box;
+  background-color: rgba(204, 153, 0, 0.35);
+  content: "Special";
+  color: white;
+  font-size: 12px;
+  height: 23px;
+  width: 70px;
+  text-align: center;
+  margin-top: -23px;
+  margin-left: 383px;
+}
+
+.special-menu {
+  border: 1px solid rgba(204, 153, 0, 0.35);
+  text-align: left;
+  height: 79px;
+}
+
+.special-menu h3 {
+  padding-top: 0px;
+}
+
+.menu-wrapper article div+div+div {
+  margin: 22px 0 15px;
+}
+
+.menu-dishes h3 {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 25px;
+  font-family: "Yeseva One";
+  font-size: 21px;
+  color: #cc9900;
+  text-align: left;
+  width: 342px;
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+.cost {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: "Yeseva One";
+  font-size: 21px;
+  text-align: right;
+  width: 100px;
+  color: #cc9900;
+}
+
+.cost::before {
+  content: "$";
+}
+
+hr {
+  size: 1px;
+  color: #cc9900;
+  width: inherit;
+}
+
+.dish-discription {
+  display: block;
+  box-sizing: border-box;
+  font-family: "Lato";
+  font-size: 16px;
+  padding: 5px 10px 6px;
+}
+
+.subscribe {
+  height: 710px;
+  width: inherit;
+  background: url("../img/backgroundPattern1.png") repeat;
+  overflow: hidden;
+}
+
+.subscribe-wrapper {
+  height: 530px;
+  width: 1200px;
+  overflow: hidden;
+  padding-top: 89px;
+}
+
+.subscribe-wrapper img {
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+.subscribe-wrapper figcaption {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 550px;
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 23px;
+}
+
+.reviews-fig p {
+  font-family: "OpenSans";
+  font-size: 15px;
+  padding: 6px 54px;
+  line-height: 24px;
+  word-spacing: -1.0px;
+}
+
+.subscribe-wrapper .promo-separator2 {
+  padding: 0 0 20px;
+}
+
+form {
+  margin-top: 18px;
+  margin-left: 45px;
+}
+
+.buttonSubmit {
+  background-color: #c9a131;
+  width: 200px;
+  height: 36px;
+  border: none;
+  font-family: OpenSans;
+  font-size: 16px;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 22px;
+  color: white;
+  margin-left: 133px;
+}
+
+.form-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  width: inherit;
+  text-align: left;
+}
+
+.form-wrapper input, select {
+  width: 200px;
+  height: 36px;
+  font-family: OpenSans;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 11px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.form-wrapper label {
+  display: block;
+  font: bold 16px OpenSans;
+  color: #cc9900;
+  padding: 5px 0px;
+}
+
+.form-wrapper div {
+  display: inline-block;
+  padding: 0 16px;
+  margin: 8px 0;
+}
+
+.footer-wrapper {
+  position: absolute;
+  width: 1210px;
+  height: inherit;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -599px;
+  box-sizing: border-box;
+  padding-top: 57px;
+}
+
+.footer-wrapper section {
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  color: white;
+  height: inherit;
+  width: 400px;
+  line-height: 25.4px;
+}
+
+.footer-wrapper h4 {
+  font-family: "Yeseva One";
+  font-size: 19px;
+  font-weight: 100;
+  padding-bottom: 13px;
+  letter-spacing: 1px;
+}
+
+.footer-wrapper img {
+  zoom: 0.9;
+  padding: 7px 0;
+}
+
+.footer-wrapper p {
+  font-family: "OpenSans";
+  font-size: 16px;
+  padding: 0 4px 52px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+.footer-wrapper a, .pay_system a {
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.social-links2 a img {
+  height: 20px;
+}
+
+.social-links2 a:hover, .pay_system a:hover {
+  zoom: 1.1;
+}
+
+.social-links2 {
+  padding-left: 9px;
+}

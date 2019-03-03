@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Notification</title>
+  <link rel="stylesheet" href="./styles/master.css">
+</head>
+
+<body>
+  <h1>This is a FISH</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <div class="notification-wrapper">
+    <h2>Tips for every day</h2>
+    <div id='iformWindow' class="useful-information">
+
+    </div>
+
+    <button class="button-close" title="Close notification"> x </button>
+
+    <form action="index.html" method="post">
+      <div>
+        <input id='tipsOf' type="checkbox" name="disableTips" value=""> Disable tips
+      </div>
+
+      <div class="inform-nav">
+        <input id='arrowPrev' type="button" name="arrowPrev" value="<" class="arrow-nav">
+
+        <input type="radio" name="information" value="info1" disabled>
+        <input type="radio" name="information" value="info2" checked disabled>
+        <input type="radio" name="information" value="info3" disabled>
+        <input type="radio" name="information" value="info4" disabled>
+
+        <input id='arrowNext' type="button" name="arrowNext" value=">" class="arrow-nav">
+      </div>
+    </form>
+
+  </div>
+  <script type="text/javascript" src="./scripts/notification.js">
+  </script>
+</body>
+
+</html>

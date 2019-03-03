@@ -1,0 +1,84 @@
+body {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+
+  font-family: sans-serif;
+}
+
+.notification-wrapper {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+  width: 500px;
+  max-height: 500px;
+  padding: 10px;
+
+  border: 1px solid #e0e0e0;
+  background-color: rgb(236, 236, 236);
+}
+
+.useful-information {
+  display: inline-block;
+  overflow: hidden;
+
+  box-sizing: border-box;
+  width: 430px;
+  max-height: 350px;
+  padding: 5px;
+  vertical-align: top;
+
+  border: 1px solid black;
+}
+
+.button-close {
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+
+  border-radius: 50%;
+}
+
+.imgIcon {
+  width: 30px;
+  height: 30px;
+}
+
+form {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+form div{
+  display: inline-block;
+  overflow: hidden;
+
+  box-sizing: border-box;
+  width: 230px;
+  height: inherit;
+}
+
+form div:first-child {
+  text-align: left;
+}
+
+form div:last-child {
+  text-align: right;
+}
+
+.arrow-nav {
+  border-radius: 50%;
+}
+
+.button-close:hover {
+  cursor: pointer;
+}

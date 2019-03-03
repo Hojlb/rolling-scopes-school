@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Match-match game</title>
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+  <header>
+    <span> <h1>This Is the Match-Match Game!</h1> </span>
+  </header>
+  <div class="wrapper">
+    <div class="general">
+      <div class="main">
+        <h2>How To Start</h2>
+        <p>Select a card style and a difficulty level and press "Start Game" button.</p>
+        <h2>Rules</h2>
+        <p>Find all the pairs! Click on a card to reveal the number on the other side. Click on another card and try to find a match to the first. If you succeed, the pair will be removed from the game. If not, try again!</p>
+        <h2>How To Win</h2>
+        <p>You will be a winner when all the pairs are found.</p>
+      </div>
+
+      <form id='userIdentification' class="" action="index.html" method="post">
+        <h2 id='attentionUser' class="attention-user"> ! Fill in the application </h2>
+        <div class="form-wrapper">
+          <div>
+            <h3>First Name</h3>
+            <input id='userName' type="text" placeholder="Maxim" name="First Name">
+          </div>
+
+          <div>
+            <h3>Last Name</h3>
+            <input id='userSurname' type="text" placeholder="Polonsky" name="Last Name">
+          </div>
+
+          <div>
+            <h3>Email</h3>
+            <input id='userEmail' type="email" placeholder="mchp010nsky@gmail.com" name="Email">
+          </div>
+        </div>
+      </form>
+
+      <div class="control">
+        <h2>Select the game settings</h2>
+        <div class="game-setings">
+          <section>
+            <input id='cardSkirt1' type="button" name="card_skirt1"></input>
+            <input id='cardSkirt2' type="button" name="card_skirt2"></input>
+            <input id='cardSkirt3' type="button" name="card_skirt3"></input>
+
+            <select class="" name="" size="3">
+              <option value="52" selected>5x2</option>
+              <option value="63">6x3</option>
+              <option value="83">8x3</option>
+            </select>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!--end general-->
+
+    <div id="gameField" class="game-field">
+      <div class="watch">
+        <span id='minute'></span>:<span id='second'></span>
+      </div>
+
+      <div id="gameGrid" class="game-grid">
+
+      </div>
+
+    </div>
+
+    <div id='resultsTable' class="results-table">
+      <ol>
+
+      </ol>
+    </div>
+
+  </div>
+  <!--end wrapper-->
+
+  <div class="control-buttons">
+    <button id='startGameButton' class="start-game" type="button" name="start-game">Start Game</button>
+    <button id='highscoreTable' class="highscore-table" type="button" name="highscore-table" disabled>Highscore</button>
+    <button id='restartGame' class="restart-game" type="button" name="restart-game" disabled>Restart</button>
+  </div>
+
+  <footer>
+    <span> <h2> RSSchool &copy;</h2> </span>
+  </footer>
+  <script type="text/javascript" src="./js/script.js">
+  </script>
+</body>
+
+</html>

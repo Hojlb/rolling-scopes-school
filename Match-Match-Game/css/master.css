@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'Calendas';
+  src: url('../fonts/Calendas_Plus.otf') format("opentype");
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Calendas', Arial, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  background: url(../img/backgroundPattern.png) repeat;
+  user-select: none;
+}
+
+header {
+  margin: 0;
+  position: relative;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #bdc48d;
+}
+
+h1 {
+  margin-top: 1rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #bdc48d;
+  height: 50px;
+}
+
+footer h2 {
+  padding-top: 0.5rem;
+  margin: 0 auto;
+}
+
+h3 {
+  margin: 0;
+}
+
+.wrapper {
+  min-height: calc(100vh - 50px - 150px);
+  width: 100%;
+  font-size: 16px;
+}
+
+.general {
+  display: block;
+  border-bottom: 2px solid #bdc48d;
+  box-sizing: border-box;
+}
+
+.main {
+  box-sizing: content-box;
+  width: 570px;
+  display: inline-block;
+  border-right: 2px solid #bdc48d;
+  margin: 0;
+  padding: 1rem;
+}
+
+.game-control {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+form {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 400px;
+  vertical-align: top;
+  padding: 1rem;
+}
+
+.form-wrapper div {
+  display: block;
+  box-sizing: border-box;
+  margin: 1rem;
+}
+
+.form-wrapper input {
+  min-height: 1.3rem;
+  min-width: 15rem;
+  font-size: 0.9rem;
+}
+
+.control {
+  display: block;
+  width: inherit;
+  height: 300px;
+  margin-top: 1rem;
+}
+
+.control-buttons, .game-setings {
+  max-height: 10rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.control-buttons button {
+  font-family: 'Calendas', Arial, sans-serif;
+  min-width: 15rem;
+  min-height: 3rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.control-buttons {
+  display: block;
+}
+
+.game-setings {
+  min-height: 250px;
+  display: block;
+  padding: 5px;
+}
+
+.game-setings input {
+  min-width: 135px;
+  min-height: 190px;
+  display: inline;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.game-setings input:hover {
+  outline: 5px solid #aad925;
+}
+
+.game-setings input:nth-child(1) {
+  background-image: url(../img/Card_skirt/marvel_skirt.png);
+}
+
+.game-setings input:nth-child(2) {
+  background-image: url(../img/Card_skirt/flower1_cr.png);
+}
+
+.game-setings input:nth-child(3) {
+  background-image: url(../img/Card_skirt/minions_skirt_cr.png);
+}
+
+.start-game {
+  background-image: url(../img/startGameArrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.highscore-table {
+  background-image: url(../img/highscore.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.restart-game {
+  background-image: url(../img/recycle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select {
+  font-family: 'Calendas', Arial, sans-serif;
+  font-size: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-width: 135px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.game-field{
+  display: none;
+}
+
+.game-grid {
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-gap: 5px 5px;
+
+  /* max-height: 385px;
+  max-width: 695px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+}
+
+.item {
+  width: 135px;
+  height: 190px;
+  perspective: 1000px;
+}
+
+.rotate {
+  height: 190px;
+  width: 135px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+.turn-card {
+  transform: rotateY(180deg);
+  user-select: none;
+}
+
+.invisible-card{
+  visibility: hidden;
+}
+
+.back {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+
+    transform: rotateY(180deg);
+}
+
+.rotate img, .back {
+  width: 135px;
+  height: 190px;
+  backface-visibility: hidden;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.watch {
+  font-size: 50px;
+  font-style: italic;
+}
+
+.results-table {
+  font-size: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+}
